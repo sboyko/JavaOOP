@@ -1,1 +1,3 @@
 # JavaOOP
+
+Simple stack calculator
