@@ -9,8 +9,8 @@ import java.util.regex.Pattern;
 
 public class DefineOperation implements Operation {
 
-    public static final Pattern NAME_PATTERN = Pattern.compile("[a-zA-Z][a-zA-Z0-9]*");
-    public static final Pattern DOUBLE_PATTERN = Pattern.compile("[+-]?\\d*\\.?\\d+");
+    public static final Pattern NAME_PATTERN = Pattern.compile("[a-zA-Z][a-zA-Z0-9_]*");
+    public static final Pattern DOUBLE_PATTERN = Pattern.compile("[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?");
 
     private final String name;
     private final double value;

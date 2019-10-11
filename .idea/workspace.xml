@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10cc7daa-c0de-4488-9aac-5e258c6a5296" name="Default Changelist" comment="" />
+    <list default="true" id="10cc7daa-c0de-4488-9aac-5e258c6a5296" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/spbstu/icst/calculator/operation/DefineOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/spbstu/icst/calculator/operation/DefineOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/spbstu/icst/collection/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/spbstu/icst/collection/Stack.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HierarchyBrowserManager">
     <option name="SORT_ALPHABETICALLY" value="true" />
     <option name="SCOPE" value="This Class" />
@@ -30,6 +38,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -73,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainClass">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.spbstu.icst.Main" />
       <module name="JavaOOP" />
@@ -135,14 +144,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MainClass" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.StackTest" />
       <item itemvalue="JUnit.OperationTest" />
       <item itemvalue="JUnit.CalculatorTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainClass" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.StackTest" />
         <item itemvalue="JUnit.OperationTest" />
         <item itemvalue="JUnit.CalculatorTest" />
@@ -161,5 +170,18 @@
       <updated>1568113827227</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

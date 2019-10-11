@@ -33,14 +33,14 @@ public class Stack implements Iterable<Double> {
     }
 
     public double pop() {
-        if (top == 0) {
+        if (empty()) {
             throw new EmptyStackException();
         }
         return storage[--top];
     }
 
     public double peek() {
-        if (top == 0) {
+        if (empty()) {
             throw new EmptyStackException();
         }
         return storage[top - 1];
