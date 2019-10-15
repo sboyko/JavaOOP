@@ -10,15 +10,15 @@ import static org.junit.Assert.*;
 
 public class StackTest {
 
-    private Stack stack;
+    private Stack<Integer> stack;
 
     @Before
-    public void setUp() throws Exception {
-        stack = new Stack(0);
+    public void setUp() {
+        stack = new ArrayStack<>(0);
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test(expected = EmptyStackException.class)

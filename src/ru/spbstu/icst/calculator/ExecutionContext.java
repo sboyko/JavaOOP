@@ -1,5 +1,6 @@
 package ru.spbstu.icst.calculator;
 
+import ru.spbstu.icst.collection.ArrayStack;
 import ru.spbstu.icst.collection.Stack;
 
 import java.util.HashMap;
@@ -7,7 +8,7 @@ import java.util.Map;
 
 public class ExecutionContext {
 
-    private final Stack stack = new Stack();
+    private final Stack<Double> stack = new ArrayStack<>();
     private final Map<String, Double> table = new HashMap<>();
     private final OperationFactory factory;
 
@@ -15,7 +16,7 @@ public class ExecutionContext {
         this.factory = factory;
     }
 
-    public Stack stack() {
+    public Stack<Double> stack() {
         return stack;
     }
 

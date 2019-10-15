@@ -1,75 +1,19 @@
 package ru.spbstu.icst.collection;
 
-import java.util.EmptyStackException;
-import java.util.Iterator;
+public interface Stack<T> extends Iterable<T> {
 
-/**
- * Array-based LIFO container
- */
-public class Stack implements Iterable<Double> {
+    void add(T d);
 
-    private double[] storage;
-    private int top;
+    T pop();
 
-    public Stack() {
-        this(10);
-    }
+    T peek();
 
-    public Stack(int initialSize) {
-        if (initialSize < 0) {
-            throw new IllegalArgumentException("Stack size must be greater or equal to zero");
+    boolean empty();
+
+    default void addAll(Iterable<? extends T> otherStack) {
+        for (T e : otherStack) {
+            add(e);
         }
-        storage = new double[initialSize];
-    }
-
-    public void add(double d) {
-        if (top == storage.length) {
-            double[] newStorage = new double[storage.length * 2 + 1];
-            System.arraycopy(storage, 0, newStorage, 0, storage.length);
-            storage = newStorage;
-        }
-
-        storage[top++] = d;
-    }
-
-    public double pop() {
-        if (empty()) {
-            throw new EmptyStackException();
-        }
-        return storage[--top];
-    }
-
-    public double peek() {
-        if (empty()) {
-            throw new EmptyStackException();
-        }
-        return storage[top - 1];
-    }
-
-    public boolean empty() {
-        return top == 0;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("Stack with %d element(s)", top);
-    }
-
-    @Override
-    public Iterator<Double> iterator() {
-        return new Iterator<Double>() {
-            private int index;
-
-            @Override
-            public boolean hasNext() {
-                return index < storage.length;
-            }
-
-            @Override
-            public Double next() {
-                return storage[index++];
-            }
-        };
     }
 
 }
